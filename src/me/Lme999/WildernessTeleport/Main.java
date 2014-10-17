@@ -28,9 +28,7 @@ public class Main extends JavaPlugin {
 			if(sender instanceof Player){
 				Player player = (Player) sender;
 				if (args.length == 0) {
-					if(Operations.checkPermission("wilderness.help", player)){
-						Help.showHelp(player);
-					}
+					Help.showHelp(player);
 				} else if (args.length == 1) {
 					if (args[0].equalsIgnoreCase("")) {
 						
