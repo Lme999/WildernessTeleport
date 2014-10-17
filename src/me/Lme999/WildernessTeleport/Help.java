@@ -6,7 +6,7 @@ public class Help {
 	
 	public Main plugin = new Main();
 	
-	public static void showHelp(Player p){
+	public static void showHelp(Player p) {
 		p.sendMessage("");
 	}
 	

@@ -24,11 +24,11 @@ public class Main extends JavaPlugin {
 	}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
-		if(cmd.getName().equalsIgnoreCase("wildernessteleport")) {
-			if(args.length == 0) {
+		if (cmd.getName().equalsIgnoreCase("wildernessteleport")) {
+			if (args.length == 0) {
 				Help.showHelp((Player) sender);
-			} else if(args.length == 1) {
-				if(args[0].equalsIgnoreCase("")) {
+			} else if (args.length == 1) {
+				if (args[0].equalsIgnoreCase("")) {
 					
 				}
 			}
