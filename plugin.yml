@@ -1,0 +1,9 @@
+name: WildernessTeleport
+version: 0.0.1
+authors: [lme999,FletchTech]
+main: me.Lme999.WildernessTeleport.Main
+
+commands:
+    wildernessteleport:
+        description: WildernessTP
+        aliases: [wild,wtp,wildernesstp,wilderness]
