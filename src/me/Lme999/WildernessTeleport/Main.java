@@ -23,9 +23,9 @@ public class Main extends JavaPlugin {
 		log.info("Disabled " + name + " v" + ver);
 	}
 	
-	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (cmd.getName().equalsIgnoreCase("wildernessteleport")) {
-			if(sender instanceof Player){
+			if(sender instanceof Player) {
 				Player player = (Player) sender;
 				if (args.length == 0) {
 					Help.showHelp(player);

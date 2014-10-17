@@ -15,6 +15,6 @@ public class Messages {
 
 	public static String notPlayer = new String(prefix + ChatColor.RED + "You're not a player!");
 
-	public static String noPermission = new String(prefix + ChatColor.RED + "You don't have permission!");
+	public static String noPermission = new String(prefix + ChatColor.RED + "You don't have permission to do this!");
 	
 }

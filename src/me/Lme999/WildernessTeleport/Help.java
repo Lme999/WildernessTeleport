@@ -11,8 +11,8 @@ public class Help {
 	public static void showHelp(Player player) {
 		if(Operations.checkPermission("wilderness.help", player)){
 			player.sendMessage(ChatColor.GOLD + "-=[ " + ChatColor.YELLOW + "WildernessTeleport Help" + ChatColor.GOLD + " ]=-");
-			player.sendMessage(ChatColor.GOLD + "/wilderness " + ChatColor.YELLOW + "WildernessTeleport base command; Displays help message");
 			player.sendMessage(ChatColor.GOLD + "/wilderness help " + ChatColor.YELLOW + "Displays help message");
+			player.sendMessage(ChatColor.GOLD + "/wilderness " + ChatColor.YELLOW + "Teleports you to the wilderness");
 		} else {
 			player.sendMessage(Messages.noPermission);
 		}
