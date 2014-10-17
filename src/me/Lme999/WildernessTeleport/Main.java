@@ -30,8 +30,8 @@ public class Main extends JavaPlugin {
 				if (args.length == 0) {
 					Help.showHelp(player);
 				} else if (args.length == 1) {
-					if (args[0].equalsIgnoreCase("")) {
-						
+					if(args[0].equalsIgnoreCase("help")) {
+						Help.showHelp(player);
 					}
 				}
 			} else {
