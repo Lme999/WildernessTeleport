@@ -6,8 +6,12 @@ public class Help {
 	
 	Main plugin = new Main();
 	
-	public static void showHelp(Player p) {
-		p.sendMessage("");
+	public static void showHelp(Player player) {
+		if(Operations.checkPermission("wilderness.help", player)){
+			player.sendMessage("");
+		} else {
+			player.sendMessage(Messages.noPermission);
+		}
 	}
 	
 }
