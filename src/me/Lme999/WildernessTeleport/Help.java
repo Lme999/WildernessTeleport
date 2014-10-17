@@ -13,6 +13,7 @@ public class Help {
 			player.sendMessage(ChatColor.GOLD + "-=[ " + ChatColor.YELLOW + "WildernessTeleport Help" + ChatColor.GOLD + " ]=-");
 			player.sendMessage(ChatColor.GOLD + "/wilderness help " + ChatColor.YELLOW + "Displays help message");
 			player.sendMessage(ChatColor.GOLD + "/wilderness " + ChatColor.YELLOW + "Teleports you to the wilderness");
+			player.sendMessage(ChatColor.GOLD + "/wilderness tppos X,Y,Z. " + ChatColor.YELLOW + "Teleports you to given coords.");
 		} else {
 			player.sendMessage(Messages.noPermission);
 		}
