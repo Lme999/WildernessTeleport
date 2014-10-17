@@ -12,8 +12,8 @@ public class Main extends JavaPlugin {
 	
 	Logger log = this.getLogger();
 	PluginDescriptionFile desc = this.getDescription();
-	String name = desc.getName();
-	String ver = desc.getVersion();
+	String name = this.desc.getName();
+	String ver = this.desc.getVersion();
 	
 	public void onEnable() {
 		log.info("Enabled " + name + " v" + ver);
@@ -25,12 +25,19 @@ public class Main extends JavaPlugin {
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
 		if (cmd.getName().equalsIgnoreCase("wildernessteleport")) {
-			if (args.length == 0) {
-				Help.showHelp((Player) sender);
-			} else if (args.length == 1) {
-				if (args[0].equalsIgnoreCase("")) {
-					
+			if(sender instanceof Player){
+				Player player = (Player) sender;
+				if (args.length == 0) {
+					if(Operations.checkPermission("wilderness.help", player)){
+						Help.showHelp(player);
+					}
+				} else if (args.length == 1) {
+					if (args[0].equalsIgnoreCase("")) {
+						
+					}
 				}
+			} else {
+				sender.sendMessage(Messages.notPlayer);
 			}
 		}
 		return false;
