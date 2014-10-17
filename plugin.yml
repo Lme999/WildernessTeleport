@@ -7,3 +7,7 @@ commands:
     wildernessteleport:
         description: WildernessTP
         aliases: [wild,wtp,wildernesstp,wilderness]
+
+permissions:
+    wilderness.help:
+        default: op
