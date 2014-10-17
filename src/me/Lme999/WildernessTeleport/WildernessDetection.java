@@ -4,4 +4,6 @@ public class WildernessDetection {
 	
 	public Main plugin = new Main();
 	
+	
+	
 }

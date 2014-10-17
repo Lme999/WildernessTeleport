@@ -24,7 +24,11 @@ public class Main extends JavaPlugin {
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
 		if(cmd.getName().equalsIgnoreCase("wildernessteleport")) {
-			
+			if(args.length == 0){
+				
+			} else if(args.length == 1){
+				
+			}
 		}
 		return false;
 	}
