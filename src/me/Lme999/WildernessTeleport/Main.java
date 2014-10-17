@@ -1,16 +1,23 @@
 package me.Lme999.WildernessTeleport;
 
-import org.bukkit.ChatColor;
+import java.util.logging.Logger;
+
+import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 	
+	Logger log = this.getLogger();
+	PluginDescriptionFile desc = this.getDescription();
+	String name = desc.getName();
+	String ver = desc.getVersion();
 	
 	public void onEnable() {
-		getLogger().info(ChatColor.BLUE + "WildernessTeleport Now Enabled");
+		log.info("Enabled " + name + " v" + ver);
 	}
 	
 	public void onDisable() {
-		getLogger().info(ChatColor.RED + "WildernessTeleport Now Disabled!");
+		log.info("Disabled " + name + " v" + ver);
 	}
+	
 }
