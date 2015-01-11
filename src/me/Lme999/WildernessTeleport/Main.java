@@ -25,14 +25,14 @@ public class Main extends JavaPlugin {
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (cmd.getName().equalsIgnoreCase("wildernessteleport")) {
-			if(sender instanceof Player) {
-				Player player = (Player) sender;
-				if(args.length == 0) {
-					Help.showHelp(player);
-				} else if(args.length == 1) {
-					if(args[0].equalsIgnoreCase("help")) {
-						Help.showHelp(player);
-					} else if(args[0].equalsIgnoreCase("tppos")) {
+			if (sender instanceof Player) {
+				Player p = (Player) sender;
+				if (args.length == 0) {
+					Help.showHelp(p);
+				} else if (args.length == 1) {
+					if (args[0].equalsIgnoreCase("help")) {
+						Help.showHelp(p);
+					} else if (args[0].equalsIgnoreCase("tppos")) {
 						
 					}
 				}
