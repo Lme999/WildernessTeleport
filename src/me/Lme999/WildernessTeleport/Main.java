@@ -32,8 +32,10 @@ public class Main extends JavaPlugin {
 				} else if (args.length == 1) {
 					if (args[0].equalsIgnoreCase("help")) {
 						Help.showHelp(p);
-					} else if (args[0].equalsIgnoreCase("tppos")) {
+					} else if (args[0].equalsIgnoreCase("?")) {
 						
+					} else if (args[0].equalsIgnoreCase("tppos")) {
+					
 					}
 				}
 			} else {
