@@ -27,17 +27,14 @@ public class Main extends JavaPlugin {
 		if (cmd.getName().equalsIgnoreCase("wildernessteleport")) {
 			if(sender instanceof Player) {
 				Player player = (Player) sender;
-				if (args.length == 0) {
+				if(args.length == 0) {
 					Help.showHelp(player);
-				} else if (args.length == 1) {
+				} else if(args.length == 1) {
 					if(args[0].equalsIgnoreCase("help")) {
 						Help.showHelp(player);
-					}
-				  else if (args.length == 1) {
-					if (args[0].equalsIgnoreCase("tppos")) {
+					} else if(args[0].equalsIgnoreCase("tppos")) {
 						
 					}
-				  }
 				}
 			} else {
 				sender.sendMessage(Messages.notPlayer);
