@@ -4,7 +4,11 @@ import org.bukkit.entity.Player;
 
 public class Operations {
 	
-	Main plugin = new Main();
+	Main plugin;
+
+	public Operations(Main instance) {
+		plugin = instance;
+	}
 	
 	public static boolean checkPermission(String permission, Player player) {
 		if (player.hasPermission(permission)) {

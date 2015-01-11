@@ -5,7 +5,11 @@ import org.bukkit.ChatColor;
 
 public class Messages {
 	
-	Main plugin = new Main();
+	Main plugin;
+
+	public Messages(Main instance) {
+		plugin = instance;
+	}
 
 	static ChatColor prefixBracketColor = ChatColor.RED;
 	static ChatColor prefixNameColor = ChatColor.BLUE;

@@ -6,7 +6,11 @@ import org.bukkit.entity.Player;
 
 public class Help {
 	
-	Main plugin = new Main();
+	Main plugin;
+
+	public Help(Main instance) {
+		plugin = instance;
+	}
 	
 	public static void showHelp(Player player) {
 		if(Operations.checkPermission("wilderness.help", player)){
