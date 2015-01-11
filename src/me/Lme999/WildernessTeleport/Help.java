@@ -12,14 +12,14 @@ public class Help {
 		plugin = instance;
 	}
 	
-	public static void showHelp(Player player) {
-		if(Operations.checkPermission("wilderness.help", player)){
-			player.sendMessage(ChatColor.GOLD + "-=[ " + ChatColor.YELLOW + "WildernessTeleport Help" + ChatColor.GOLD + " ]=-");
-			player.sendMessage(ChatColor.GOLD + "/wilderness help " + ChatColor.YELLOW + "Displays help message");
-			player.sendMessage(ChatColor.GOLD + "/wilderness " + ChatColor.YELLOW + "Teleports you to the wilderness");
-			player.sendMessage(ChatColor.GOLD + "/wilderness tppos X,Y,Z. " + ChatColor.YELLOW + "Teleports you to given coords.");
+	public static void showHelp(Player p) {
+		if(Operations.checkPermission("wilderness.help", p)){
+			p.sendMessage(ChatColor.GOLD + "-=[ " + ChatColor.YELLOW + "WildernessTeleport Help" + ChatColor.GOLD + " ]=-");
+			p.sendMessage(ChatColor.GOLD + "/wilderness help " + ChatColor.YELLOW + "Displays help message");
+			p.sendMessage(ChatColor.GOLD + "/wilderness " + ChatColor.YELLOW + "Teleports you to the wilderness");
+			p.sendMessage(ChatColor.GOLD + "/wilderness tppos X,Y,Z. " + ChatColor.YELLOW + "Teleports you to specified coords.");
 		} else {
-			player.sendMessage(Messages.noPermission);
+			p.sendMessage(Messages.noPermission);
 		}
 	}
 	
