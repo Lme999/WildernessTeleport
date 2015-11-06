@@ -1,0 +1,10 @@
+name: WildernessTeleport
+main: me.Lme999.WildernessTeleport.Main
+version: 0.0.1
+description: A plugin to teleport you to a random area in the wilderness.
+authors: [Lme999,HeadGam3z]
+
+commands:
+  wildernessteleport:
+    aliases: [wtp, wildernesstp, wilderness, wild]
+    description: Teleport to wilderness
