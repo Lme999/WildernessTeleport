@@ -1,8 +1,8 @@
-name: WildernessTeleport
+name: WildernessTP-Original
 main: me.Lme999.WildernessTeleport.Main
 version: 0.0.1-DEV
 description: A plugin to teleport you to a random area in the wilderness.
-authors: [Lme999,Rufust]
+authors: [Lme999,Rufust,FletchXYZ]
 
 commands:
   wildernessteleport:
